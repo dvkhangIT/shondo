@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Italic.ttf') format('ttf');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-BoldItalic.ttf') format('ttf');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-MediumItalic.ttf') format('ttf');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('ttf');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Light.ttf') format('ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-LightItalic.ttf') format('ttf');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Poppins-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('ttf');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/') format('woff2'),
+    url('../fonts/OpenSans-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primarycolor: #f15412;
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primarycolor);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ul {
+  list-style-type: none;
+}
+input {
+  outline: none;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+.container-fluid {
+  padding: 0;
+  /* height: 500vh; */
+}
+.header {
+  border-bottom: 1px solid var(--primarycolor);
+}
+a.text-dark:hover,
+a.text-dark:focus {
+  color: var(--primarycolor) !important;
+  text-decoration: none;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000;
+  width: 60px;
+  border-radius: 50%;
+  padding: 3px;
+  height: 50px;
+  margin: auto 0;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-indicators li {
+  background-color: var(--primarycolor);
+}
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: var(--primarycolor);
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: var(--primarycolor);
+}
+.btn-search:hover {
+  color: #fff;
+  background: var(--primarycolor);
+}
+.form-search {
+  border: 1px solid #ccc;
+}
+.main {
+  margin-top: 50px;
+}
+.list-product {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 30px;
+}
+.list-customer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+}
+.product-price {
+  font-size: 1.2rem;
+  color: var(--primarycolor);
+}
+.product-name {
+  color: #252a2b;
+  font-size: 1.5rem;
+}
+.product-btn {
+  text-align: center;
+  color: #fff;
+}
+.product-btn a {
+  background: var(--primarycolor);
+  color: #fff;
+}
+.product-btn a:hover {
+  background-color: transparent;
+  border: 1px solid var(--primarycolor);
+  color: var(--primarycolor);
+}
+.product-item {
+  border: 1px solid #ccc;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+.product-item:hover {
+  border: 1px solid var(--primarycolor);
+}
+hr {
+  height: 1px;
+  background-color: var(--primarycolor);
+}
+.footer-bottom {
+  background-color: #e5e4e4;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
